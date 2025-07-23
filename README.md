@@ -12,7 +12,7 @@ Projeto Kubernetes do Guess Game com backend Flask, frontend React e PostgreSQL.
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/pucminas-guessgame-k8s.git
+git clone https://github.com/viniciusaraujo20/pucminas-guessgame-k8s.git
 cd pucminas-guessgame-k8s
 ```
 
