@@ -1,0 +1,11 @@
+backend:
+  image: viniciusaraujo20/backend:1.0.0
+  replicas: 2
+
+frontend:
+  image: viniciusaraujo20/frontend:1.0.0
+  replicas: 1
+
+postgres:
+  image: postgres:13
+  storage: 5Gi
