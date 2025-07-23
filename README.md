@@ -79,9 +79,28 @@ Acesse em: [http://localhost:8080](http://localhost:8080)
 - NGINX (proxy reverso)  
 
 ---
-
+- `helm-chart/`
 ## 📁 Estrutura do projeto
 
-- `helm-chart/` — Chart Helm para deploy no Kubernetes  
-- `k8s/` — Manifests Kubernetes para deploy manual  
-- `README.md` — Documentação do projeto
+`guessgame-k8s/`
+├── README.md
+├── `k8s/`
+│   ├── postgres-pvc.yaml           # PersistentVolumeClaim para armazenamento do PostgreSQL
+│   ├── postgres-deployment.yaml    # Deployment do banco PostgreSQL
+│   ├── backend-deployment.yaml     # Deployment da API backend Flask
+│   ├── backend-service.yaml        # Service ClusterIP para expor o backend
+│   ├── backend-hpa.yaml            # Horizontal Pod Autoscaler para backend
+│   ├── frontend-deployment.yaml    # Deployment do frontend React com NGINX
+│   ├── frontend-service.yaml       # Service NodePort para expor o frontend
+├── `helm-chart/`
+│   ├── Chart.yaml                  # Metadata do Helm Chart
+│   ├── values.yaml                 # Valores configuráveis do Chart
+│   └── `templates/`                  # Templates dos manifests Kubernetes usados pelo Helm
+│       ├── postgres-pvc.yaml
+│       ├── postgres-deployment.yaml
+│       ├── backend-deployment.yaml
+│       ├── backend-service.yaml
+│       ├── backend-hpa.yaml
+│       ├── frontend-deployment.yaml
+│       ├── frontend-service.yaml
+
