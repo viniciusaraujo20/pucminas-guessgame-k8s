@@ -83,24 +83,24 @@ Acesse em: [http://localhost:8080](http://localhost:8080)
 ## 📁 Estrutura do projeto
 
 `guessgame-k8s/`
-├── README.md
+├── `README.md`
 ├── `k8s/`
-│   ├── postgres-pvc.yaml           # PersistentVolumeClaim para armazenamento do PostgreSQL
-│   ├── postgres-deployment.yaml    # Deployment do banco PostgreSQL
-│   ├── backend-deployment.yaml     # Deployment da API backend Flask
-│   ├── backend-service.yaml        # Service ClusterIP para expor o backend
-│   ├── backend-hpa.yaml            # Horizontal Pod Autoscaler para backend
-│   ├── frontend-deployment.yaml    # Deployment do frontend React com NGINX
-│   ├── frontend-service.yaml       # Service NodePort para expor o frontend
+│   ├── `postgres-pvc.yaml`           # PersistentVolumeClaim para armazenamento do PostgreSQL
+│   ├── `postgres-deployment.yaml`    # Deployment do banco PostgreSQL
+│   ├── `backend-deployment.yaml`     # Deployment da API backend Flask
+│   ├── `backend-service.yaml`        # Service ClusterIP para expor o backend
+│   ├── `backend-hpa.yaml`            # Horizontal Pod Autoscaler para backend
+│   ├── `frontend-deployment.yaml`    # Deployment do frontend React com NGINX
+│   ├── `frontend-service.yaml`       # Service NodePort para expor o frontend
 ├── `helm-chart/`
-│   ├── Chart.yaml                  # Metadata do Helm Chart
-│   ├── values.yaml                 # Valores configuráveis do Chart
+│   ├── `Chart.yaml`                  # Metadata do Helm Chart
+│   ├── `values.yaml`                 # Valores configuráveis do Chart
 │   └── `templates/`                  # Templates dos manifests Kubernetes usados pelo Helm
-│       ├── postgres-pvc.yaml
-│       ├── postgres-deployment.yaml
-│       ├── backend-deployment.yaml
-│       ├── backend-service.yaml
-│       ├── backend-hpa.yaml
-│       ├── frontend-deployment.yaml
-│       ├── frontend-service.yaml
+│       ├── `postgres-pvc.yaml`
+│       ├── `postgres-deployment.yaml`
+│       ├── `backend-deployment.yaml`
+│       ├── `backend-service.yaml`
+│       ├── `backend-hpa.yaml`
+│       ├── `frontend-deployment.yaml`
+│       ├── `frontend-service.yaml`
 
