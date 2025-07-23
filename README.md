@@ -76,7 +76,7 @@ Acesse em: [http://localhost:8080](http://localhost:8080)
 - Flask (Backend Python)  
 - React (Frontend)  
 - PostgreSQL  
-- NGINX (proxy reverso e balanceador)  
+- NGINX (proxy reverso)  
 
 ---
 
